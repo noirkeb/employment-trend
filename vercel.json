@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/kosis/(.*)",
+      "destination": "https://kosis.kr/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/kosis/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "X-Requested-With, Content-Type, Accept, Origin, Authorization" }
+      ]
+    }
+  ]
+}
