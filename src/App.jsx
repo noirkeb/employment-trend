@@ -85,7 +85,7 @@ function App() {
         <p>통계 출처: 교육부 (2025년 2월 최신 발표) / 전망 출처: 한국고용정보원 2024-2034 전망</p>
       </header>
 
-      <div className="grid-stats" style={{ gridTemplateColumns: 'repeat(3, 1fr)', marginBottom: '16px' }}>
+      <div className="grid-stats" style={{ marginBottom: '16px' }}>
         <StatCard 
           title="전체 고용률" 
           value={`${latestRate}%`} 
@@ -109,9 +109,9 @@ function App() {
         />
       </div>
 
-      <div className="grid-stats" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+      <div className="grid-stats">
         <StatCard 
-          title="최고 취업률" 
+          title="최고 취업률"  
           value="의약계열" 
           subtitle="79.4% 기록 (상세 보기)"
           icon={Award}

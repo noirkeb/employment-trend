@@ -23,14 +23,15 @@ const CustomTooltip = ({ active, payload, label }) => {
 
 const EmploymentChart = ({ data }) => {
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <div style={{ flex: 1, minHeight: '320px', width: '100%', display: 'flex', flexDirection: 'column' }}>
+      <ResponsiveContainer width="100%" height="100%">
       <BarChart
         data={data}
         margin={{
           top: 20,
           right: 30,
           left: 0,
-          bottom: 40,
+          bottom: 0,
         }}
       >
         <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
@@ -41,6 +42,7 @@ const EmploymentChart = ({ data }) => {
           tickLine={false} 
           angle={-45}
           textAnchor="end"
+          height={50}
         />
         <YAxis 
           tick={{ fill: '#94a3b8', fontSize: 12 }} 
@@ -56,7 +58,8 @@ const EmploymentChart = ({ data }) => {
           ))}
         </Bar>
       </BarChart>
-    </ResponsiveContainer>
+      </ResponsiveContainer>
+    </div>
   );
 };
 

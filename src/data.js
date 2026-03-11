@@ -50,7 +50,7 @@ export const employmentData = [
     ]
   },
   { 
-    name: '교육계열', rate: 71.1, averageSalary: '3,200만 원 ~ 3,800만 원', trend: '+2.0%p', color: '#f43f5e',
+    name: '교육계열', rate: 71.1, averageSalary: '3,200만 원 ~ 3,800만 원', trend: '+2.0%p', color: '#06b6d4',
     trendData: [ { year: '2020', rate: 68.1 }, { year: '2021', rate: 68.5 }, { year: '2022', rate: 69.2 }, { year: '2023', rate: 69.1 }, { year: '2024', rate: 71.1 } ],
     majors: [
       {
